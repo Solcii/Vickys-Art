@@ -1,8 +1,13 @@
-const navHamburguer = document.querySelector(".hamburguer")
-const navMenu = document.querySelector(".nav-menu")
-
-navHamburguer.addEventListener("click", () => {
-    navMenu.classList.toggle("nav-menu_visible");
+const menuBtn = document.querySelector('.menu-btn');
+const NavMenu = document.querySelector('.nav-menu')
+let menuOpen = false;
+menuBtn.addEventListener('click', () => {
+    NavMenu.classList.toggle('nav-menu_visible')
+    if (!menuOpen) {
+        menuBtn.classList.add('open');
+        menuOpen = true;
+    } else {
+        menuBtn.classList.remove('open');
+        menuOpen = false;
+    }
 });
-
-console.log(123)

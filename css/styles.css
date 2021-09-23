@@ -9,7 +9,7 @@ body {
     font-family: 'Karla', 'Mulish', 'Titillium Web', sans-serif;
     font-size: 1.6rem;
     padding-top: 8rem;
-    background-color: black;
+    background-color: #edf2f7aa;
 }
 
 .nav-bar {
@@ -56,14 +56,90 @@ body {
     transition: .5s;
 }
 
-.hamburguer {
-    color: #000000;
-    background: none;
-    border: none;
-    font-size: 2.3rem;
-    padding: 0 2rem;
+.menu-btn {
+    position: relative;
     display: none;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
+    transition: all .5s ease-in-out;
+    margin-right: 2rem;
+}
+
+.menu-btn_burguer {
+    width: 2rem;
+    height: 0.3rem;
+    background: #0a014f;
+    border-radius: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::before,
+.menu-btn_burguer::after {
+    content: '';
+    position: absolute;
+    width: 2rem;
+    height: 0.3rem;
+    background: #0a014f;
+    border-radius: 0.5rem;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn_burguer::before {
+    transform: translateY(-0.7rem);
+}
+
+.menu-btn_burguer::after {
+    transform: translateY(0.7rem);
+}
+
+.menu-btn.open .menu-btn_burguer {
+    transform: translateX(-5rem);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn_burguer::before {
+    transform: rotate(45deg) translate(3.5rem, -3.5rem);
+}
+
+.menu-btn.open .menu-btn_burguer::after {
+    transform: rotate(-45deg) translate(3.5rem, 3.5rem);
+}
+
+@media (max-width: 576px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #344966;
+        position: fixed;
+        left: 0;
+        top: 8rem;
+        width: 100%;
+        padding: 2rem 0;
+        height: calc(100% - 8rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item {
+        margin: 2rem;
+    }
+    .nav-menu-link {
+        color: #ffffff;
+    }
+    .nav-menu-link:hover {
+        background: none;
+        color: #f6caca;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .nav-menu_visible {
+        left: 0%;
+    }
 }
 
 @media (max-width: 768px) {
@@ -92,8 +168,8 @@ body {
         background: none;
         color: #f6caca;
     }
-    .hamburguer {
-        display: block;
+    .menu-btn {
+        display: flex;
     }
     .nav-menu_visible {
         left: 0%;
