@@ -233,6 +233,109 @@ main {
     transform: scale(1.1);
 }
 
+footer {
+    background: #343a40;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+.logo-footer {
+    width: 20rem;
+    border-radius: 10rem;
+    margin: 2rem;
+    align-self: center;
+}
+
+.footer-menu {
+    margin: 1rem;
+}
+
+.footer-menu li {
+    list-style: none;
+}
+
+.footer-menu-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    font-weight: 200;
+}
+
+.footer-menu-link:hover {
+    color: #bb8e8e;
+    transition: .5s;
+}
+
+.footer-social-media a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+.footer-social-media a:hover {
+    transition: .5s;
+}
+
+#instagram:hover {
+    color: #c62568;
+}
+
+#facebook:hover {
+    color: #1876f2;
+}
+
+#whatsapp:hover {
+    color: #2db842;
+}
+
+.footer-contacto {
+    color: #ffffff;
+    margin-bottom: 2rem;
+}
+
+.footer-contacto div {
+    margin: 1rem 3rem;
+    display: inline-block;
+}
+
+.footer-contacto p {
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+#firma {
+    font-size: 1.5rem;
+    color: #fafafa;
+    margin-top: 2rem;
+    background: #212529;
+    padding: 0.5rem;
+    margin: 0;
+}
+
+#firma a {
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+#firma i {
+    color: #fafafa;
+    margin: 1rem;
+}
+
+#github:hover {
+    color: #ee5030;
+    transition: .5s;
+}
+
+#linkedin:hover {
+    color: #2867b2;
+    transition: .5s;
+}
+
 
 /* MEDIAQUERYS PARA RESPONSIVE */
 

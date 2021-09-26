@@ -11,3 +11,13 @@ menuBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+const portadaBtn = document.getElementById('boton-portada')
+portadaBtn.addEventListener('click', () => {
+    const element = document.querySelector('#categoria-productos')
+    const top = element.getBoundingClientRect().top - 80
+    window.scrollTo({
+        top,
+        behavior: 'smooth'
+    })
+});
