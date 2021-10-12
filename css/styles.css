@@ -431,6 +431,14 @@ footer {
     padding: 1.5rem;
 }
 
+#titulo-pagina-productos {
+    text-align: center;
+}
+
+.nombre-cat-productos {
+    font-size: 2.5rem;
+}
+
 
 /* MEDIAQUERY PARA RESPONSIVE */
 
