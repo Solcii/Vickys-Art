@@ -439,8 +439,148 @@ footer {
     font-size: 2.5rem;
 }
 
+.contenedor {
+    width: 90%;
+    margin: auto;
+}
+
+.contenedor-titulo-controles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-titulo-controles .indicadores button {
+    background: #1f272b;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    border: none;
+    margin-right: 0.2rem;
+}
+
+.contenedor-titulo-controles .indicadores button:hover,
+.contenedor-titulo-controles .indicadores button.activo {
+    background: #9d78ce;
+}
+
+.cat-productos {
+    margin-bottom: 7rem;
+}
+
+.cat-productos .contenedor-principal {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.cat-productos .contenedor-principal .flecha-izquierda,
+.cat-productos .contenedor-principal .flecha-derecha {
+    position: absolute;
+    border: none;
+    background: rgba(0, 0, 0, .3);
+    font-size: 2.5rem;
+    height: 50%;
+    top: calc(50% - 25%);
+    line-height: 4rem;
+    width: 3rem;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 500;
+    transition: .2s ease all;
+}
+
+.cat-productos .contenedor-principal .flecha-izquierda {
+    left: 0;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.cat-productos .contenedor-principal .flecha-derecha {
+    right: 0;
+    border-radius: 1rem 0 0 1rem;
+}
+
+.cat-productos .contenedor-principal .flecha-izquierda:hover,
+.cat-productos .contenedor-principal .flecha-derecha:hover {
+    background: rgba(0, 0, 0, .7);
+}
+
+.cat-productos .contenedor-carousel {
+    width: 100%;
+    padding: 1rem 0;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.cat-productos .contenedor-carousel .carousel {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.cat-productos .contenedor-carousel .carousel .producto {
+    min-width: 20%;
+    transition: .3s ease all;
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, .3);
+}
+
+.cat-productos .contenedor-carousel .carousel .producto img {
+    width: 100%;
+    vertical-align: top;
+}
+
 
 /* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        background-color: #344966;
+        position: fixed;
+        left: 0;
+        top: 8rem;
+        width: 100%;
+        padding: 2rem 0;
+        height: calc(100% - 8rem);
+        overflow-y: auto;
+        left: 100%;
+        transition: left 0.3s;
+    }
+    .nav-menu-item {
+        margin: 2rem;
+    }
+    .nav-menu-link {
+        color: #ffffff;
+    }
+    .nav-menu-link:hover {
+        background: none;
+        color: #f6caca;
+    }
+    .menu-btn {
+        display: flex;
+    }
+    .nav-menu_visible {
+        left: 0%;
+    }
+    #img-portada-desktop {
+        display: none;
+    }
+    #img-portada-mobile {
+        display: block;
+    }
+    #contenedor-fb-posts {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #contenedor-fb-posts iframe {
+        max-width: none;
+    }
+    .cat-productos .contenedor-carousel .carousel .producto {
+        min-width: 25%;
+    }
+}
 
 @media (max-width: 576px) {
     .nav-menu {
@@ -489,51 +629,7 @@ footer {
     .subtitulos {
         font-size: 2.5rem;
     }
-}
-
-@media (max-width: 768px) {
-    .nav-menu {
-        flex-direction: column;
-        align-items: center;
-        margin: 0;
-        background-color: #344966;
-        position: fixed;
-        left: 0;
-        top: 8rem;
-        width: 100%;
-        padding: 2rem 0;
-        height: calc(100% - 8rem);
-        overflow-y: auto;
-        left: 100%;
-        transition: left 0.3s;
-    }
-    .nav-menu-item {
-        margin: 2rem;
-    }
-    .nav-menu-link {
-        color: #ffffff;
-    }
-    .nav-menu-link:hover {
-        background: none;
-        color: #f6caca;
-    }
-    .menu-btn {
-        display: flex;
-    }
-    .nav-menu_visible {
-        left: 0%;
-    }
-    #img-portada-desktop {
-        display: none;
-    }
-    #img-portada-mobile {
-        display: block;
-    }
-    #contenedor-fb-posts {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    #contenedor-fb-posts iframe {
-        max-width: none;
+    .cat-productos .contenedor-carousel .carousel .producto {
+        min-width: 50%;
     }
 }

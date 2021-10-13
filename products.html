@@ -34,7 +34,27 @@
     <main>
         <h1 class="subtitulos" id="titulo-pagina-productos">Descubre nuestros productos</h1>
         <section id="tazas" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Tazas personalizadas</h2>
+            <div class="cat-productos contenedor">
+                <div class="contenedor-titulo-controles">
+                    <h2 class="subtitulos nombre-cat-productos">Tazas personalizadas</h2>
+                    <div class="indicadores"></div>
+                </div>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-tazas" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-tazas">
+                        <div class="carousel" id="carousel-tazas">
+                            <!-- <div class="producto"><img src="images/Productos/Tazas/1.jpg" alt=""></div> -->
+                        </div>
+                    </div>
+
+                    <button role="button" id="flecha-derecha-tazas" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+
+            </div>
+
+
+
         </section>
         <section id="platos" class="secciones-principales">
             <h2 class="subtitulos nombre-cat-productos">Platos, bandejas y bowls</h2>
@@ -94,7 +114,7 @@
         </div>
     </footer>
     <script src="js/main.js "></script>
-    <script src="js/about.js"></script>
+    <script src="js/products.js"></script>
 </body>
 
 </html>
