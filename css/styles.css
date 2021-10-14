@@ -297,6 +297,9 @@ footer {
         left: 100%;
         transition: left 0.3s;
     }
+    .logo {
+        width: 17rem;
+    }
     .nav-menu-item {
         margin: 2rem;
     }

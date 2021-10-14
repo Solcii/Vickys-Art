@@ -90,6 +90,22 @@
     vertical-align: top;
 }
 
+#frase-final-productos {
+    font-size: 2.5rem;
+    font-style: italic;
+    text-align: center;
+    margin: 2rem 2rem 4rem;
+}
+
+.seccion-producto {
+    position: relative;
+}
+
+.ancla-productos {
+    position: absolute;
+    margin-top: -8rem;
+}
+
 
 /* MEDIAQUERY PARA RESPONSIVE */
 
@@ -104,6 +120,9 @@
         min-width: 50%;
     }
     .nombre-cat-productos {
+        font-size: 2rem;
+    }
+    #frase-final-productos {
         font-size: 2rem;
     }
 }

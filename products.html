@@ -36,7 +36,8 @@
         <h1 class="subtitulos" id="titulo-pagina-productos">
             Descubre nuestros productos
         </h1>
-        <section id="tazas" class="secciones-principales">
+        <section id="tazas" class="secciones-principales seccion-producto">
+            <div id="ancla-tazas" class="ancla-productos"></div>
             <div class="cat-productos contenedor">
                 <h2 class="subtitulos nombre-cat-productos">Tazas personalizadas</h2>
                 <div class="contenedor-principal">
@@ -52,6 +53,7 @@
         </section>
 
         <section id="platos" class="secciones-principales">
+            <div id="ancla-platos" class="ancla-productos"></div>
             <div class="cat-productos contenedor">
                 <h2 class="subtitulos nombre-cat-productos">Platos, bandejas y bowls</h2>
                 <div class="contenedor-principal">
@@ -67,27 +69,117 @@
         </section>
 
         <section id="mates" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Mates</h2>
-        </section>
-        <section id="sets" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Sets</h2>
-        </section>
-        <section id="macetas" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Macetas</h2>
-        </section>
-        <section id="cuadros" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Cuadros</h2>
-        </section>
-        <section id="imanes" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Imanes</h2>
-        </section>
-        <section id="cartucheras" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Cartucheras y neceser</h2>
-        </section>
-        <section id="otros-productos" class="secciones-principales">
-            <h2 class="subtitulos nombre-cat-productos">Otros productos</h2>
+            <div id="ancla-mates" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Mates</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-mates" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-mates">
+                        <div class="carousel" id="carousel-mates"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-mates" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-mates"></div>
+            </div>
         </section>
 
+        <section id="sets" class="secciones-principales">
+            <div id="ancla-sets" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Sets</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-sets" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-sets">
+                        <div class="carousel" id="carousel-sets"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-sets" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-sets"></div>
+            </div>
+        </section>
+
+        <section id="macetas" class="secciones-principales">
+            <div id="ancla-macetas" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Macetas</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-macetas" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-macetas">
+                        <div class="carousel" id="carousel-macetas"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-macetas" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-macetas"></div>
+            </div>
+        </section>
+
+        <section id="cuadros" class="secciones-principales">
+            <div id="ancla-cuadros" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Cuadros</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-cuadros" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-cuadros">
+                        <div class="carousel" id="carousel-cuadros"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-cuadros" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-cuadros"></div>
+            </div>
+        </section>
+
+        <section id="imanes" class="secciones-principales">
+            <div id="ancla-imanes" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Imanes</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-imanes" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-imanes">
+                        <div class="carousel" id="carousel-imanes"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-imanes" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-imanes"></div>
+            </div>
+        </section>
+
+        <section id="cartucheras" class="secciones-principales">
+            <div id="ancla-cartucheras" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Cartucheras y neceser</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-cartucheras" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-cartucheras">
+                        <div class="carousel" id="carousel-cartucheras"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-cartucheras" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-cartucheras"></div>
+            </div>
+        </section>
+
+        <section id="otros-productos" class="secciones-principales">
+            <div id="ancla-otros" class="ancla-productos"></div>
+            <div class="cat-productos contenedor">
+                <h2 class="subtitulos nombre-cat-productos">Otros productos</h2>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda-otros" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+
+                    <div class="contenedor-carousel contenedor-carousel-otros">
+                        <div class="carousel" id="carousel-otros"></div>
+                    </div>
+                    <button role="button" id="flecha-derecha-otros" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+                <div class="indicadores" id="indicadores-otros"></div>
+            </div>
+        </section>
+        <p id="frase-final-productos">¡Recuerda que todos nuestros productos son personalizables!</p>
     </main>
     <footer>
         <img class="logo-footer" src="images/logo.png" alt="logo-redondo">
