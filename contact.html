@@ -34,39 +34,77 @@
         </nav>
     </header>
     <main>
-        <h1 class='subtitulos' id="titulo-contacto">¡Creemos juntos tu proximo Vicky's Art!</h1>
-        <section id="formulario-contacto">
-            <h2 class="subtitulos">Contacto</h2>
-        </section>
-        <section id="datos-de-contacto">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26297.08640363214!2d-58.49052452954408!3d-34.52478724321706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6a6386ba5c9%3A0xb8039ed75861da4d!2sVicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1634234061854!5m2!1ses!2sar"
-                width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            <div id="datos-adicionales-contacto">
+        <h1 class='subtitulos' id="titulo-contacto">¡Creemos juntos tu siguiente Vicky's Art!</h1>
+        <div id="datos-adicionales-contacto">
+            <div class="datos-contacto-clasicos">
                 <p>Punto de entrega en Vicente López (Buenos Aires)</p>
                 <p>¡Envíos a todo el país!</p>
                 <div>
-                    <i class="fas fa-envelope "></i>
+                    <i class="fas fa-envelope icono-contacto"></i>
                     <p>vickysart@mail.com</p>
                 </div>
                 <div>
-                    <i class="fas fa-phone "></i>
+                    <i class="fas fa-phone icono-contacto"></i>
                     <p>(011) 5555-5555</p>
                 </div>
-                <div><i class="fab fa-whatsapp "></i>
+                <div><i class="fab fa-whatsapp icono-contacto"></i>
                     <p>+54 9 11 5555 5555</p>
                 </div>
-                <br>
+            </div>
+            <div class="datos-contacto-redes">
                 <p>Seguinos en redes sociales para descubrir más productos y conocer las novedades:</p>
                 <div>
-                    <i class="fab fa-instagram "></i>
+                    <i class="fab fa-instagram icono-contacto"></i>
                     <p>@vickysart_21</p>
                 </div>
                 <div>
-                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-facebook icono-contacto"></i>
                     <p>Vicky's Art (@vickysart.21)</p>
                 </div>
             </div>
-        </section>
+        </div>
+
+
+        <div id="contenedor-secciones-contacto">
+            <section id="formulario-contacto" class="container">
+                <form>
+                    <div class="row">
+
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Correo electrónico</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Teléfono (opcional)</label>
+                                <input type="tel" class="form-control" id="telefono">
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3">
+                                <label for="mensaje" class="form-label">Mensaje</label>
+                                <textarea class="form-control" id="mensaje" rows="10" required></textarea>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mb-3"><button type="submit" class="btn btn-dark">Enviar</button></div>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <section id="datos-de-contacto">
+                <iframe id="mapa-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26297.08640363214!2d-58.49052452954408!3d-34.52478724321706!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb6a6386ba5c9%3A0xb8039ed75861da4d!2sVicente%20L%C3%B3pez%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1634234061854!5m2!1ses!2sar"
+                    width="400" height="300" style="border:0;" allowfullscreen="false" loading="lazy"></iframe>
+            </section>
+        </div>
     </main>
     <footer>
         <img class="logo-footer" src="images/logo.png" alt="logo-redondo">
@@ -95,7 +133,8 @@
         <div id="firma">
             <p>Hecho con ❤️ by Solcii</p>
             <a href="https://github.com/Solcii"><i id="github" class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/sol-micaela-potschka-506713130/"><i id="linkedin" class="fab fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/sol-micaela-potschka-506713130/"><i id="linkedin"
+                    class="fab fa-linkedin"></i></a>
         </div>
     </footer>
     <script src="js/main.js"></script>
