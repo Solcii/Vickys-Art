@@ -89,7 +89,7 @@
 }
 
 .accordion-body.active {
-    max-height: 10rem;
+    max-height: 30rem;
     padding: 1.5rem;
 }
 

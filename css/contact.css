@@ -1,0 +1,46 @@
+#titulo-contacto {
+    text-align: center;
+}
+
+#datos-de-contacto {
+    display: flex;
+    width: 95%;
+    margin: 2rem auto;
+}
+
+#datos-de-contacto #datos-adicionales-contacto {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+}
+
+#datos-de-contacto #datos-adicionales-contacto div {
+    display: flex;
+    align-items: center;
+}
+
+#datos-de-contacto #datos-adicionales-contacto div p {
+    margin: 0;
+    margin-left: 1rem;
+}
+
+
+/* MEDIAQUERY PARA RESPONSIVE */
+
+@media (max-width: 768px) {
+    #datos-de-contacto {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+    #datos-de-contacto #datos-adicionales-contacto {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    #formulario-contacto .subtitulos {
+        font-size: 2rem;
+    }
+    #datos-de-contacto #datos-adicionales-contacto {
+        font-size: 1.5rem;
+    }
+}
