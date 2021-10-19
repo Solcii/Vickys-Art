@@ -42,11 +42,14 @@
     max-width: 50%;
 }
 
-#formulario-contacto {
+#formulario-contacto label {
     font-size: 1.6rem;
+    font-weight: bold;
 }
 
-.btn {
+#formulario-contacto input,
+#formulario-contacto textarea,
+#formulario-contacto .btn {
     font-size: 1.6rem;
 }
 

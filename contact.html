@@ -67,31 +67,31 @@
 
         <div id="contenedor-secciones-contacto">
             <section id="formulario-contacto" class="container">
-                <form>
+                <form action="sendmail.php" method="post">
                     <div class="row">
 
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="nombre" class="form-label">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" required>
+                                <input type="text" class="form-control" id="nombre" name="nombre" pattern="[a-zA-Z ]*" title="Utiliza únicamente caracteres alfabéticos" required>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="email" class="form-label">Correo electrónico</label>
-                                <input type="email" class="form-control" id="email" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="telefono" class="form-label">Teléfono (opcional)</label>
-                                <input type="tel" class="form-control" id="telefono">
+                                <input type="tel" class="form-control" id="telefono" name="telefono">
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="mb-3">
                                 <label for="mensaje" class="form-label">Mensaje</label>
-                                <textarea class="form-control" id="mensaje" rows="10" required></textarea>
+                                <textarea class="form-control" id="mensaje" rows="5" name="comentarios" required></textarea>
                             </div>
                         </div>
                         <div class="col-12">
@@ -138,6 +138,7 @@
         </div>
     </footer>
     <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 
 </html>
