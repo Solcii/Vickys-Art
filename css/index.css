@@ -116,4 +116,8 @@
     #boton-portada {
         font-size: 1.8rem;
     }
+    .product-card {
+        width: 85%;
+        max-width: 50rem;
+    }
 }
