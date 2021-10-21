@@ -76,10 +76,10 @@
     font-size: 1.8rem;
     text-align: center;
     margin: 1rem;
+    height: 4rem;
 }
 
-.product-card a {
-    text-decoration: none;
+.product-card p {
     font-size: 1.4rem;
     color: #696868;
     padding: 1rem;

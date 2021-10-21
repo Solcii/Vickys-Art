@@ -10,3 +10,12 @@ PORTADA_BTN.addEventListener('click', (event) => {
         behavior: 'smooth',
     })
 });
+
+const PRODUCT_CARD = document.querySelectorAll('.product-card')
+PRODUCT_CARD.forEach((card) => {
+    card.addEventListener('click', (e) => {
+        const CARD_ID = card.id
+        const URL_ID = `products.html#${CARD_ID}`
+        window.location.href = URL_ID
+    })
+});
