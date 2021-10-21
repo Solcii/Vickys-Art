@@ -97,13 +97,17 @@
     margin: 2rem 2rem 4rem;
 }
 
+.secciones-principales {
+    margin: 5rem 2rem;
+}
+
 .seccion-producto {
     position: relative;
 }
 
 .ancla-productos {
     position: absolute;
-    margin-top: -8rem;
+    margin-top: -9rem;
 }
 
 
